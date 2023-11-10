@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            /* background-color: aqua; */
+            background-color: #8BC6EC;
+            background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .content{
+            /* width: 570px; */
+            width:400px;
+            height: 600px;
+          background-color: azure;
+          border-radius:20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 25px;
+        }
+        .content img{
+            width: 100%;
+            height: 30%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        .ordersummary{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 75%;
+            justify-content: center;
+            align-items: center;
+        }
+        .ordersummary p{
+            font-size: 1.2rem;
+        text-align: center;        }
+        .content h3{
+            padding: 10px 10px  0px;
+            font-size: 1.5rem;
+        }
+        .invoice{
+            width: 80%;
+            height: 9%; 
+            /* padding: 8px; */
+            background-color:#8BC6EC;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+
+        }
+       .invoice img{
+        width: 3.5rem;
+        height:3.5rem;
+
+       }
+       
+       a{
+        text-decoration: none;
+       }
+       /* .amountbox a{
+        margin-right:6px;
+        padding:5px;
+
+       } */
+       .amountdetails{
+        display: flex;
+        gap:20px;
+        height: 100%;
+        align-items: center;
+        /* justify-content: space-around; */
+
+       }
+       .changedetails a:hover{
+/* background-color: rgb(197, 197, 209); */
+          color: rgb(79, 26, 240);
+
+       }
+    
+     .paymentbutton{
+        width: 85%;
+        height: 9%;
+        background-color: rgb(22, 22, 79);
+        color:white;
+        font-size: 1.2rem;
+        border-radius: 10px;
+        box-shadow:0 6px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      /* padding: 10px 30px 10px; */
+        /* margin-top:1.5rem; */
+        /* border: none; */
+       }
+       .paymentbutton:hover{
+        background-color:rgb(214, 214, 201);
+        border: none;
+        color:rgb(22, 22, 79);
+       }
+       .cancellink a{
+        color: rgb(46, 43, 43);
+        font-weight: bold;
+        font-size: large;
+               /* padding: 20px; */
+            
+       }
+       .cancellink:hover{
+        color: rgb(3, 3, 30);
+        text-shadow: 0.5px 0.5px 1px rgb(22, 22, 79);
+       
+       }
+      
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+                <img src="./images/icon.jpg" alt="banner">
+            <div class="ordersummary">
+                <h3>order summary</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit unde totam ut architecto reiciendis ipsum</p>
+            </div>
+            <div class="invoice">
+                <div class="amountdetails">
+                    <img src="./images/music.png" alt="music logo">
+               
+                    <div class="amountbox">
+                        <p>Sushmitha H R</p>
+                        <p>123456789</p>
+                    </div>
+                </div>
+                 
+                <div class="changedetails">
+                    <a href="#">change</a>
+                </div>
+               
+            </div>
+            <!-- <div > -->
+                <button class="paymentbutton">Prcoceed to Submit</button>
+            <!-- </div> -->
+           <div class="cancellink">
+            <a href="#">Cancel order</a>
+           </div>
+          
+            
+        </div>
+    </div>
+</body>
+</html>

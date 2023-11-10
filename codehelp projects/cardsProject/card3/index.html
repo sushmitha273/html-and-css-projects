@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* body{
+            height: 100vh;
+        } */
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: #061437;
+background-image: linear-gradient(160deg, #061437 0%, #662c94 50%, #ffffff 100%);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .card{
+        
+            /* align-items: center; */
+        width: 1000px;
+        height:500px;
+        background-color: #4e094c;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        }
+     .card:hover::before {
+        left: 0%; /* Move the overlay to the right edge of the card */
+    } 
+    .card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(45, 42, 42, 0.5); /* Adjust the overlay color and opacity */
+        transition: left 4s ease; /* Add transition for smooth animation */
+    } 
+        .left{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        color: white;
+        background-color: rgb(125, 11, 125);
+        /* justify-content:space-around; */
+        }
+        .leftcontent{
+        width: 75%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 65px;
+        }
+        h2{
+            font-size: 1.8rem;
+        }
+        .left p{
+            font-size: 1.1rem;
+        }
+        .right{
+            /* width:100%; */
+            width: 50%;
+            background-image: url(../card2/images/icon.jpg);
+            background-size: contain;
+            background-position: center;
+        }
+        .right img{
+            width:100%;
+            height: 100%;
+            /* height: 100%; */
+        }
+        .statbox{
+            display: flex;
+            justify-content: space-between; 
+            /* gap: 50px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="left">
+                <div class="leftcontent">
+                    <h2>Get insights that help your business grow</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nisi adipisci tempore reprehenderit dolorem eum consequuntur saepe fugiat recusandae consequatur.</p>
+                    <div class="statbox">
+                        <div class="statdetails">
+                            <h3>10K+</h3>
+                            <p>Comments</p>
+                        </div>
+                        <div class="statdetails">
+                            <h3>214</h3>
+                            <p>Paid Users</p>
+                        </div>
+                        <div class="statdetails">
+                            <h3>12M+</h3>
+                            <p>Views</p>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="right">
+            <!-- <img src="../card2/images/icon.jpg" alt="bannerimage"> -->
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
